@@ -21,13 +21,15 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "https://demo-react-application-tau.vercel.app",
+        "http://localhost:5173",  # local dev
+        "https://demo-react-application-tau.vercel.app",  # production domain
+        "https://demo-react-application-bu68lumsd-niraj20.vercel.app",  # preview domain
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 # Authentication routes
