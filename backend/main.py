@@ -22,7 +22,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://YOUR-VERCEL-PROJECT.vercel.app",
+        "https://demo-react-application-tau.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
